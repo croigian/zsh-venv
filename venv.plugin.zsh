@@ -13,10 +13,10 @@ _venv_load() {
     if [ "$VIRTUAL_ENV" ]; then
       [ "$VENV_ROOT" = "$VIRTUAL_ENV" ] && return
       deactivate
-      echo deactivate
     fi
 
     source "$VENV_ROOT"/bin/activate
+
   elif [ "$VIRTUAL_ENV" ]; then
     deactivate
   fi
